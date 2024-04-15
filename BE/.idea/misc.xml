@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/api-gateway" />
+    <file type="web" url="file://$PROJECT_DIR$/collateral-service" />
+    <file type="web" url="file://$PROJECT_DIR$/customer-service" />
+    <file type="web" url="file://$PROJECT_DIR$/discovery-server" />
+    <file type="web" url="file://$PROJECT_DIR$/installment-contract-service" />
+    <file type="web" url="file://$PROJECT_DIR$/lending-partner-service" />
+    <file type="web" url="file://$PROJECT_DIR$/payment-service" />
+    <file type="web" url="file://$PROJECT_DIR$/product-service" />
+    <file type="web" url="file://$PROJECT_DIR$/user-service" />
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.manage_customer.AddCustomerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#ABE16C">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_back"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/btn_add_customer_cancel"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ADD CUSTOMER"
+                        android:textSize="16sp"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/seymourone_regular"/>
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_refresh"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="12dp"
+                        android:id="@+id/btn_add_customer_reset"/>
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textSize="24sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"/>
+
+            <EditText
+                android:id="@+id/edt_add_customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter customer name"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:textSize="24sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg_add_customer_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/rb_add_customer_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:checked="true"
+                    android:textSize="16sp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_add_customer_female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="16sp"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of birth:"
+                android:textSize="24sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:id="@+id/edt_add_customer_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter customer date of birth"
+                android:inputType="date"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/custom_text_view_has_border"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone number:"
+                android:textSize="24sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"/>
+
+            <EditText
+                android:id="@+id/edt_add_customer_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter customer phone number"
+                android:inputType="number"
+                android:fontFamily="@font/montserrat_regular"
+                android:imeOptions="actionNext"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="24sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"/>
+
+            <EditText
+                android:id="@+id/edt_add_customer_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter customer email"
+                android:fontFamily="@font/montserrat_regular"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Street address:"
+                android:textSize="24sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"/>
+
+            <EditText
+                android:id="@+id/edt_add_customer_street_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter customer street address"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City:"
+                android:textSize="24sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"/>
+
+            <EditText
+                android:id="@+id/edt_add_customer_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter customer city"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country:"
+                android:textSize="24sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"/>
+
+            <EditText
+                android:id="@+id/edt_add_customer_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter customer country"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Job:"
+                android:textSize="24sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"/>
+
+            <EditText
+                android:id="@+id/edt_add_customer_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter customer job"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bank card number:"
+                android:textSize="24sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"/>
+
+            <EditText
+                android:id="@+id/edt_add_customer_bank_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter customer bank card number"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work place:"
+                android:textSize="24sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"/>
+
+            <EditText
+                android:id="@+id/edt_add_customer_work_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter customer work place"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Income:"
+                android:textSize="24sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="4dp"/>
+
+            <EditText
+                android:id="@+id/edt_add_customer_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter customer income"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"
+                android:layout_marginBottom="48dp"/>
+
+            <Button
+                android:id="@+id/btn_add_customer_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="@color/black"
+                android:backgroundTint="#6AFF71"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

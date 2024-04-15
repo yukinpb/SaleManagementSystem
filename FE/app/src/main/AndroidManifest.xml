@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FE"
+        tools:targetApi="31">
+        <activity
+            android:name=".view.statistic_customer_by_revenue.CustomerContractDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.statistic_customer_by_revenue.StatisticCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.sign_installment_contract.AddInstallmentContractActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.sign_installment_contract.AddCollateralActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.sign_installment_contract.AddInstallmentCollateralActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.sign_installment_contract.AddLendingPartnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.sign_installment_contract.AddInstallmentCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.sign_installment_contract.AddInstallmentProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.manage_customer.EditCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.manage_customer.AddCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.manage_customer.SearchCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.manage_product.EditProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.manage_product.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.manage_product.SearchProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

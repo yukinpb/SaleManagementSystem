@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.sign_installment_contract.AddInstallmentContractActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#ABE16C">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_back"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/btn_add_installment_contract_cancel"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD ICONTRACT"
+                    android:textSize="16sp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/seymourone_regular"/>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_refresh"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="12dp"
+                    android:id="@+id/btn_add_installment_contract_reset"/>
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First date paid:"
+            android:textSize="24sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="4dp"/>
+
+        <TextView
+            android:id="@+id/txt_first_date_paid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter first date paid"
+            android:inputType="date"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/custom_text_view_has_border"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Day paid each month:"
+            android:textSize="24sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="4dp"/>
+
+        <EditText
+            android:id="@+id/edt_day_paid_each_month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter day paid each month"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maximum day outstanding:"
+            android:textSize="24sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="4dp"/>
+
+        <EditText
+            android:id="@+id/edt_maximum_day_outstanding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter maximum day outstanding"
+            android:fontFamily="@font/montserrat_regular"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Penalty rate:"
+            android:textSize="24sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="4dp"/>
+
+        <EditText
+            android:id="@+id/edt_penalty_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter penalty rate"
+            android:fontFamily="@font/montserrat_regular"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"
+            android:layout_marginBottom="48dp"/>
+
+        <Button
+            android:id="@+id/btn_add_installment_contract_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginHorizontal="8dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#6AFF71"/>
+    </LinearLayout>
+
+
+</LinearLayout>

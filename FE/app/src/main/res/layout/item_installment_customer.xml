@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/txt_installment_customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="Customer name"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:id="@+id/txt_installment_customer_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="Job: Doctor"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/txt_installment_customer_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="Phone number: 0123456789"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_select_installment_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="#F44336"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

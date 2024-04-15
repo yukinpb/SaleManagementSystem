@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/txt_contract_amount_remaining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="Amount remaining: 100$"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:id="@+id/txt_contract_day_paid_each_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="Day paid each month: 15"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/txt_contract_penalty_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="Penalty rate: 0%"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/txt_contract_annual_interest_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="Annual interest rate: 0%"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/txt_contract_interest_rate_increase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="Interest rate increase: 0%"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

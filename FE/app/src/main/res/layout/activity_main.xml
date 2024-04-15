@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Employee:"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="User name"
+        android:textSize="24sp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/btn_manage_product"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Manage product"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#6AFF71"/>
+
+    <Button
+        android:id="@+id/btn_manage_customer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Manage customer"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#6AFF71"/>
+
+    <Button
+        android:id="@+id/btn_sign_installment_contract"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Sign intallment contract"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#6AFF71"/>
+
+    <Button
+        android:id="@+id/btn_statistic_customer_by_revenue"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Statistic customer"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#6AFF71"/>
+
+</LinearLayout>
